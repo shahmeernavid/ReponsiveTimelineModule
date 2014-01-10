@@ -1,0 +1,92 @@
+<html>
+<head>
+    <style>
+        body{
+            padding:0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        h4, h6, p{
+            margin:0 0 10px 0;
+        }
+        .timeline {
+            max-width:960px;
+            height:auto;
+            background:url(images/timeline_line.png) repeat-y;
+            background-position:50% 0;
+            list-style:none;
+            margin:10px auto 0;
+            padding:0;
+            overflow:hidden;
+        }
+        .timeline .event {
+            float:left;
+            width:40%;
+            margin:50px 4% 50px 6%;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box; /* Firefox, other Gecko */
+            box-sizing: border-box; /* Opera/IE 8+ */
+            border:1px solid grey;
+            background:#fff;
+            text-align:left;
+            position:relative;
+            padding:1.3em;
+        }
+        .timeline .event:nth-child(even) {
+            float:right;
+            margin:100px 6% 0 4%;
+        }
+        .timeline .event:after {
+            width:15px;
+            height:15px;
+            border-radius:50%;
+            border:5px #fff solid;
+            display:block;
+            content:' ';
+            background:#9d9d9d;
+            position:absolute;
+            top:1.8em;
+            right:-47px;
+            left:auto;
+        }
+        .timeline .event:nth-child(even):after {
+            right:auto;
+            left:-47px;
+        }
+        @media all and (max-width: 960px){
+            .timeline .event {
+                width:90%!important;
+                float:none!important;
+                right:auto!important;
+                left:auto!important;
+                margin:5% auto!important;
+                
+            }
+            .timeline .event:after {
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="timeline">
+        <li class="event">
+            <h4>Freelance Designer</h4>
+            <h6>2013</h6>
+            <p>Event Description. Blah Blah Blah</p>
+        </li>
+        <li class="event">
+            <h4>SyntaxDonors.org</h4>
+            <h6>2010-2013</h6>
+            <p>Event Description. Blah Blah Blah</p>
+        </li>
+        <li class="event">
+            <h4>CatalystsX</h4>
+            <h6>2012</h6>
+            <p>Event Description. Blah Blah Blah</p>
+        </li>
+        
+    </ul>
+</body>
+</html>
+
